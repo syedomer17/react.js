@@ -1,7 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import "./App.css"
 
 function App() {
   const [a,setA] =useState(10)
+
+  const [count ,setCount] =  useState(0);
+
+  const  [first, setFirst] = useState(0)
+
+  useEffect(() =>{
+    alert('Hey Welcome to vite')
+  },[])
+
+  useEffect(() => {
+    alert("count is change");
+  }, [count]);
+
+  useEffect(() => {
+    alert("I am omer");
+  },[])
   return (
     <>
     <div>
